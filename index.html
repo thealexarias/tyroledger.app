@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tyro Ledger</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Favicon -->
+    <link rel="icon" href="Tyro-Ledger-Icon.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Tyro Ledger</h1>
+            <h2>Understand Your Finances</h2>
+            <p>Tyro Ledger shows how much money you have after credit card expenses.</p>
+            <button class="cta">Coming Soon to the App Store</button>
+        </div>
+    </header>
+    <main>
+        <section id="features">
+            <div class="container">
+                <h2>Why Tyro Ledger?</h2>
+                <ul>
+                    <li>Local data storage for ultimate privacy.</li>
+                    <li>Simple and intuitive interface.</li>
+                    <li>Calculate remaining funds instantly.</li>
+                </ul>
+            </div>
+        </section>
+        <section id="privacy">
+            <div class="container">
+                <h2>Privacy Policy</h2>
+                <p>We value your privacy. <a href="#" id="privacy-link">Read our Privacy Policy</a>.</p>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Email: <a href="mailto:tyroledger@gmail.com">tyroledger@gmail.com</a></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>Follow us:</p>
+            <div class="social-links">
+                <a href="https://x.com/TyroLedger" target="_blank" aria-label="Follow us on X">
+                    <i class="fa-brands fa-x-twitter" style="color: white; font-size: 24px; margin-right: 15px;"></i>
+                </a>
+                <a href="https://www.tiktok.com/@tyro.ledger" target="_blank" aria-label="Follow us on TikTok">
+                    <i class="fa-brands fa-tiktok" style="color: white; font-size: 24px;"></i>
+                </a>
+            </div>
+            <p>© 2024 Tyro Ledger. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Privacy Policy Modal -->
+    <div id="privacy-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Privacy Policy</h2>
+            <p>At Tyro Ledger, we respect your privacy. This Privacy Policy explains how we handle your data.</p>
+            <p><strong>No Data Collection</strong></p>
+            <p>Tyro Ledger does not collect, store, or share any personal information. All data entered in the app is stored locally on your device.</p>
+            <p><strong>Data Storage</strong></p>
+            <p>All financial information and other app data remain on your device. We do not access or transmit this data to any servers or third parties.</p>
+            <p><strong>Anonymous Usage Data</strong></p>
+            <p>We may collect anonymous, aggregate data (such as app usage statistics) solely for the purpose of improving the app. This data does not identify you personally and is not shared with third parties.</p>
+            <p><strong>Deleting Your Data</strong></p>
+            <p>If you uninstall the app, all associated data will be permanently deleted from your device.</p>
+            <p><strong>Contact Us</strong></p>
+            <p>If you have any questions or concerns, please contact us at <a href="mailto:tyroledger@gmail.com">tyroledger@gmail.com</a>.</p>
+        </div>
+    </div>
+
+    <script>
+        // Modal Elements
+        const modal = document.getElementById('privacy-modal');
+        const link = document.getElementById('privacy-link');
+        const closeButton = document.querySelector('.close-button');
+
+        // Open Modal
+        link.onclick = function (event) {
+            event.preventDefault(); // Prevent link navigation
+            modal.style.display = 'block';
+        };
+
+        // Close Modal
+        closeButton.onclick = function () {
+            modal.style.display = 'none';
+        };
+
+        // Close Modal on Outside Click
+        window.onclick = function (event) {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        };
+    </script>
+</body>
+</html>
