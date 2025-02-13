@@ -15,7 +15,7 @@ body {
 
 /* Header Section */
 header {
-    background-color: #2C3E50;
+    background-color: #0b7557;
     color: #fff;
     text-align: center;
     padding: 60px 20px;
@@ -32,7 +32,7 @@ header p {
 }
 
 header .cta {
-    background-color: #3498db;
+    background-color: #5fd2b0;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -42,7 +42,7 @@ header .cta {
 }
 
 header .cta:hover {
-    background-color: #2980b9;
+    background-color: #4da58c;
 }
 
 /* Feature Section */
@@ -92,7 +92,7 @@ header .cta:hover {
 
 /* Footer */
 footer {
-    background-color: #2C3E50;
+    background-color: #084c3a;
     color: #fff;
     text-align: center;
     padding: 20px 0;
